@@ -1,0 +1,128 @@
+script.Parent.MouseButton1Click:Connect(function()
+	local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+
+	ESP.Players = false
+	ESP.Boxes = false
+	ESP.Names = true
+	ESP:Toggle(true)
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Red Key",
+		CustomName = "Red Key",
+		Color = Color3.fromRGB(255, 0, 4),
+		IsEnabled = "RedKey",
+	})
+	ESP.RedKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Blue Key",
+		CustomName = "Blue Key",
+		Color = Color3.fromRGB(0, 206, 209),
+		IsEnabled = "BlueKey",
+	})
+	ESP.BlueKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Orange Key",
+		CustomName = "Orange Key",
+		Color = Color3.fromRGB(255, 165, 0),
+		IsEnabled = "OrangeKey",
+	})
+	ESP.OrangeKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Purple Key",
+		CustomName = "Purple Key",
+		Color = Color3.fromRGB(138, 43, 226),
+		IsEnabled = "PurpleKey",
+	})
+	ESP.PurpleKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Taser",
+		CustomName = "Taser",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "Taser",
+	})
+	ESP.Taser = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Green Key",
+		CustomName = "Green Key",
+		Color = Color3.fromRGB(0, 128, 0),
+		IsEnabled = "GreenKey",
+	})
+	ESP.GreenKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "White Key",
+		CustomName = "White Key",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "WhiteKey",
+	})
+	ESP.WhiteKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Yellow Key",
+		CustomName = "Yellow Key",
+		Color = Color3.fromRGB(255, 255, 0),
+		IsEnabled = "YellowKey",
+	})
+	ESP.YellowKey = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Crowbar",
+		CustomName = "Crowbar",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "Crowbar",
+	})
+	ESP.Crowbar = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Red Book",
+		CustomName = "Red Book",
+		Color = Color3.fromRGB(255, 0, 4),
+		IsEnabled = "RedBook",
+	})
+	ESP.RedBook = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Blue Book",
+		CustomName = "Blue Book",
+		Color = Color3.fromRGB(0, 206, 209),
+		IsEnabled = "BlueBook",
+	})
+	ESP.BlueBook = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Green Book",
+		CustomName = "Green Book",
+		Color = Color3.fromRGB(0, 128, 0),
+		IsEnabled = "GreenBook",
+	})
+	ESP.GreenBook = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "USB",
+		CustomName = "USB",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "USB",
+	})
+	ESP.USB = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Truss",
+		CustomName = "Truss",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "Truss",
+	})
+	ESP.Truss = true
+
+	ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Wrench",
+		CustomName = "Wrench",
+		Color = Color3.fromRGB(245, 245, 245),
+		IsEnabled = "Wrench",
+	})
+	ESP.Wrench = true
+end)
